@@ -1,1 +1,64 @@
-Hello
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drop-region {
+	background-color: #fff;
+	border-radius:20px;
+	box-shadow:0 0 35px rgba(0,0,0,0.05);
+	width: 70%; 
+	padding: 20px 20px; 
+	text-align: center;
+	cursor:pointer;
+	transition:.3s;
+	margin: 20px; 
+	max-width: 400px; 
+}
+.drop-region:hover {
+	box-shadow:0 0 45px rgba(0,0,0,0.1);
+}
+
+.big-button {
+	background-color: #03045E; 
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 10px;
+	cursor: pointer;
+	padding: 15px 30px;
+	border-radius: 20px;
+	width: auto; 
+	transition: background-color 0.3s;
+}
+.big-button:hover {
+	background-color: #45a049;
+}
+</style>
+</head>
+<body>
+
+<div id="drop-region1" class="drop-region">
+	<div class="drop-message">
+		<b>Hide Secret Image</b>
+	</div>
+	<a href="./Watermark_drop_encode0C.html" class="big-button">Hide</a>
+</div>
+
+<div id="drop-region2" class="drop-region">
+	<div class="drop-message">
+		<b>Reveal Secret Image</b>
+	</div>
+	<a href="./Watermark_drop_decode0C.html" class="big-button">Reveal</a>
+</div>
+
+</body>
+</html>
